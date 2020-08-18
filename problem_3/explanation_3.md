@@ -2,4 +2,4 @@
 The function uses Merge Sort algorithm to sort the array which runs at O(n log n). The logic in rearrange_digits function runs at O(n), so overall the function runs at O(n log n).
 
 # Space
-Space is O(1) because no matter the size of the input the function uses the same amount of space.
+Space is O(n) because at each step we were copying values into new arrays, and we were getting rid of the old arrays.

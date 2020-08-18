@@ -9,7 +9,7 @@ def sort_012(input_list):
         return None
 
     if len(input_list) == 0:
-        return None
+        return []
 
     next_pos_0 = 0
     next_pos_2 = len(input_list) - 1
@@ -43,5 +43,5 @@ def test_function(test_case):
 test_function([0, 0, 2, 2, 2, 1, 1, 1, 2, 0, 2])
 test_function([2, 1, 2, 0, 0, 2, 1, 0, 1, 0, 0, 2, 2, 2, 1, 2, 0, 0, 0, 2, 1, 0, 2, 0, 0, 1])
 test_function([0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2])
-print(sort_012([])) # expect to return None becase array is empty
+print(sort_012([])) # expect to return an empty array because the input is an empty array
 print(sort_012(1)) # expect to return None because of invalid input
